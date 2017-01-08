@@ -58,6 +58,8 @@
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701081632066__InitialCreate.resx">
