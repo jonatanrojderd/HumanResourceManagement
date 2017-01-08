@@ -8,5 +8,7 @@ namespace Data.Repositories
     {
         void Create(Employee employee);
         Task<IList<Employee>> ReadAsync();
+        void Update(Employee employee);
+        void Delete(Employee employee);
     }
 }
