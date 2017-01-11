@@ -3,12 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HRManagement"
+        xmlns:viewModels="clr-namespace:HRManagement.ViewModels"
+        xmlns:views="clr-namespace:HRManagement.Views"
         mc:Ignorable="d"
-        Title="MainWindow" 
-        Height="350" Width="525"
+        Title="Human Resource Management" 
+        Height="500" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TabControl x:Name="TabControl"
+                    ItemsSource="{Binding TabItems}"
+                    Margin="10, 10, 0, 0" 
+                    Height="400"
+                    Width="400"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
+            <TabControl.Resources>
+                <DataTemplate DataType="{x:Type viewModels:EmployeeViewModel}">
+                    <views:EmployeeControl></views:EmployeeControl>
+                </DataTemplate>
+            </TabControl.Resources>
+
+            <TabControl.ItemContainerStyle>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="Header" Value="{Binding Header}"></Setter>
+                </Style>
+            </TabControl.ItemContainerStyle>
+        </TabControl>
     </Grid>
 </Window>
