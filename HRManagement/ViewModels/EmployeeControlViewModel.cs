@@ -1,6 +1,8 @@
-﻿namespace HRManagement.ViewModels
+﻿using Prism.Mvvm;
+
+namespace HRManagement.ViewModels
 {
-    public class EmployeeControlViewModel : IEmployeeControlViewModel
+    public class EmployeeControlViewModel : BindableBase, IEmployeeControlViewModel
     {
         public string Header => "Employees";
         public string Content => "Employee Tab Content";
