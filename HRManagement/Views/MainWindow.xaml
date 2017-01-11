@@ -18,7 +18,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top">
             <TabControl.Resources>
-                <DataTemplate DataType="{x:Type viewModels:EmployeeViewModel}">
+                <DataTemplate DataType="{x:Type viewModels:EmployeeControlViewModel}">
                     <views:EmployeeControl></views:EmployeeControl>
                 </DataTemplate>
             </TabControl.Resources>

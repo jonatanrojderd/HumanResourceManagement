@@ -11,7 +11,7 @@ namespace HRManagement.IoC
         {
             container.RegisterType<IMainWindow, MainWindow>();
             container.RegisterType<IMainWindowViewModel, MainWindowViewModel>();
-            container.RegisterType<IEmployeeViewModel, EmployeeViewModel>();
+            container.RegisterType<IEmployeeControlViewModel, EmployeeControlViewModel>();
 
             container.RegisterType<IEmployeeRepository, EmployeeRepository>();
         }

@@ -4,10 +4,9 @@ namespace HRManagement.ViewModels
 {
     public class MainWindowViewModel : IMainWindowViewModel
     {
-        private readonly IEmployeeViewModel _employeeViewModel;
-        public ObservableCollection<object> TabItems { get; set; }
+        private readonly IEmployeeControlViewModel _employeeViewModel;
         
-        public MainWindowViewModel(IEmployeeViewModel employeeViewModel)
+        public MainWindowViewModel(IEmployeeControlViewModel employeeViewModel)
         {
             _employeeViewModel = employeeViewModel;
 
@@ -16,5 +15,6 @@ namespace HRManagement.ViewModels
                 _employeeViewModel
             };
         }
+        public ObservableCollection<object> TabItems { get; set; }
     }
 }

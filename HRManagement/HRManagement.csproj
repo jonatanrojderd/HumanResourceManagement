@@ -110,8 +110,8 @@
     </Compile>
     <Compile Include="IoC\IoCConfiguration.cs" />
     <Compile Include="IoC\IoCContainer.cs" />
-    <Compile Include="ViewModels\EmployeeViewModel.cs" />
-    <Compile Include="ViewModels\IEmployeeViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeControlViewModel.cs" />
+    <Compile Include="ViewModels\IEmployeeControlViewModel.cs" />
     <Compile Include="ViewModels\IMainWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\EmployeeControl.xaml.cs">

@@ -1,6 +1,6 @@
 ﻿namespace HRManagement.ViewModels
 {
-    public interface IEmployeeViewModel
+    public interface IEmployeeControlViewModel
     {
         
     }
